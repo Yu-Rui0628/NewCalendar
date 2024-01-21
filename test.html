@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Toast UI Calendar Example</title>
+
+    <link rel="stylesheet" href="https://uicdn.toast.com/tui-calendar/latest/tui-calendar.css" />
+
+
+    <link rel="stylesheet" href="https://uicdn.toast.com/tui-calendar/latest/tui-calendar-default.css" />
+</head>
+<body>
+
+    <div id="calendar" style="height: 800px;"></div>
+
+
+    <script src="https://uicdn.toast.com/tui-calendar/latest/tui-calendar.js"></script>
+
+    <script>
+
+        document.addEventListener('DOMContentLoaded', function() {
+            var calendar = new tui.Calendar('#calendar', {
+                defaultView: 'month', 
+                taskView: true,   
+                scheduleView: true, 
+               
+            });
+
+
+        });
+    </script>
+</body>
+</html>
